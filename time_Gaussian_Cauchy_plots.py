@@ -19,7 +19,7 @@ sarsa_agent = _mod.sarsa_agent
 # ============================================================
 # CONFIGURATION
 # ============================================================
-N_SEEDS = 1000         # Number of random seeds to train
+N_SEEDS = 500         # Number of random seeds to train
 
 # Environment / agent hyper-parameters
 ENV_SIZE = 100
@@ -29,7 +29,7 @@ LR = 0.05
 GAMMA = 0.95
 EPISODES = 1000
 STEPS_PER_EPISODE = 10000
-AGENT_STD = [2.405, 1]
+AGENT_STD = [1, 1]
 
 
 # Whether to include the closeness reward curve

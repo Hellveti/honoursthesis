@@ -17,19 +17,33 @@ def folded_cauchy_iqr(gamma):
 
 # ── Data from notebook ──
 # Gaussian–Gaussian mixtures (σ₁ = 1 fixed, σ₂ varies)
+# gg_data = [
+#     {"sigma2": 2, "mean_steps": 36.70},
+#     {"sigma2": 3, "mean_steps": 27.37},
+#     {"sigma2": 4, "mean_steps": 22.44},
+#     {"sigma2": 5, "mean_steps": 19.88},
+# ]
+
+# # Gaussian–Cauchy mixtures (γ = 1 fixed, Gaussian σ varies)
+# gc_data = [
+#     {"sigma": 1.0,      "gamma": 1, "mean_steps": 33.86},
+#     {"sigma": 1.482602, "gamma": 1, "mean_steps": 33.33},
+#     {"sigma": 2.4045,   "gamma": 1, "mean_steps": 33.36},
+# ]
+
 gg_data = [
-    {"sigma2": 2, "mean_steps": 36.70},
-    {"sigma2": 3, "mean_steps": 27.37},
-    {"sigma2": 4, "mean_steps": 22.44},
-    {"sigma2": 5, "mean_steps": 19.88},
+    {"sigma2": 2, "mean_steps": 96.79},
+    {"sigma2": 3, "mean_steps": 38.03},
+    {"sigma2": 4, "mean_steps": 29.82},
+    {"sigma2": 5, "mean_steps": 28.46},
 ]
 
-# Gaussian–Cauchy mixtures (γ = 1 fixed, Gaussian σ varies)
+
 gc_data = [
-    {"sigma": 1.0,      "gamma": 1, "mean_steps": 33.86},
-    {"sigma": 1.482602, "gamma": 1, "mean_steps": 33.33},
-    {"sigma": 2.4045,   "gamma": 1, "mean_steps": 33.36},
+    {"sigma": 1.0,      "gamma": 1, "mean_steps": 42.01},
+    {"sigma": 2.4045,   "gamma": 1, "mean_steps": 42.03},
 ]
+
 
 # IQR *difference* between the two mixture components
 SIGMA1 = 1  # fixed small-step Gaussian in all mixtures
